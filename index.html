@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- Index -->
+    <head>
+        
+        <!-- Tab Name/Title -->
+        <title>Fla.Sh.Cal</title>
+
+        <!-- Link To CSS  -->
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- Link To JS -->
+        <Script type="text/javascript" src="js/index.js"></Script>
+
+    </head>
+
+    <!-- Body & Content-->
+    <body>
+        
+        <!-- Webpage Title -->
+        <h1 class="web-title"  id="top">F  l  a  S  h  C  a  l</h1>
+        
+        <!-- Welcome Text -->
+        <div class="welcome">
+            <p>Welcome to FlaShCal</p>
+            <p>FlaShCal stands for Flat Shape Calculator</p>
+            <p>Here you can calculate the perimeter and area of flat shapes with ease</p>
+            <p class="engage">Let's try it !! Choose a shape and insert any number to calculate</p>
+            <br>
+        </div>
+
+        <!-- Navigation Header & Button -->
+        <header>
+            <nav>
+                <ul class="button">
+                    <a href="#triangle-area" class="item">TRIANGLE AREA</a>
+                    <a href="#triangle-perimeter" class="item">TRIANGLE PERIMETER</a>
+                    <a href="#parallelogram-area" class="item">PARALLELOGRAM AREA</a>
+                    <a href="#parallelogram-perimeter" class="item">PARALLELOGRAM PERIMETER</a>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        
+        <!-- Content & Form -->
+        <main>
+            <section class="form-box" id="triangle-area">
+                <!-- Form Information -->
+                <h2>TRIANGLE AREA</h2>
+                <img class="shapes" src="assets/triangle.png">
+                <p>Formula for triangle's area is :</p>
+                <p class="formula"> L =  ½  x  a  x  t</p>
+                <p>Where :</br>
+                L = Area (Luas)</br>
+                a = base (alas)</br>
+                t = height (tinggi)</p>
+                <hr>
+                
+                <!-- Form Input & Submit -->
+                <h3>CALCULATE TRIANGLE AREA</h3>
+                <form class="input-form">
+                    <input class="box" id="tri.base.a" type="text" placeholder="Base (alas) - cm">
+                    <br>
+                    <input class="box" id="tri.height" type="text" placeholder="Height (tinggi) - cm">
+                    <br>
+                    <div class="result">
+                        <p id="tri.area.for"></p>
+                        <p id="tri.area.cal"></p>
+                        <p id="tri.area"></p>
+                    </div>
+                    <input type="button" class="submit" value="CALCULATE" onclick="triarea()">
+                    <br>
+                    <div class="lower-button">
+                        <input type="reset" class="reset" value="Reset" onclick="clearform()">
+                        <a href="#top" class="back">Back To Top</a>
+                    </div>
+                </form>
+            </section>
+            <br><br>
+            <section class="form-box" id="triangle-perimeter">
+                <!-- Form Information -->
+                <h2>TRIANGLE PERIMETER</h2>
+                <img class="shapes" src="assets/triangle.png">
+                <p>Formula for triangle's area is :</p>
+                <p class="formula"> K =  a  +  b  +  c</p>
+                <p>Where :</br>
+                K = Perimeter (Keliling)</br>
+                a = base (alas)</br>
+                b = side (sisi)</br>
+                c = side (sisi)</p>
+                <hr>
+                
+                <!-- Form Input & Submit -->
+                <h3>CALCULATE TRIANGLE PERIMETER</h3>
+                <form class="input-form">
+                    <input class="box" id="tri.base.b" type="text" placeholder="Base (alas) - cm">
+                    <br>
+                    <input class="box" id="tri.side1" type="text" placeholder="Side (sisi) - cm">
+                    <br>
+                    <input class="box" id="tri.side2" type="text" placeholder="Side (sisi) - cm">
+                    <br>
+                    <div class="result">
+                        <p id="tri.peri.for"></p>
+                        <p id="tri.peri.cal"></p>
+                        <p id="tri.peri"></p>
+                    </div>
+                    <input type="button" class="submit" value="CALCULATE" onclick="triperi()">
+                    <br>
+                    <div class="lower-button">
+                        <input type="reset" class="reset" value="Reset" onclick="clearform()">
+                        <a href="#top" class="back">Back To Top</a>
+                    </div>
+                </form>
+            </section>
+            <br><br>
+            <section class="form-box" id="parallelogram-area">
+                <!-- Form Information -->
+                <h2>PARALLELOGRAM AREA</h2>
+                <img class="shapes" src="assets/parallelogram.png">
+                <p>Formula for parallelogram's area is :</p>
+                <p class="formula"> L =  a  x  t</p>
+                <p>Where :</br>
+                L = Area (Luas)</br>
+                a = base (alas)</br>
+                t = height (tinggi)</p>
+                <hr>
+                
+                <!-- Form Input & Submit -->
+                <h3>CALCULATE PARALLELOGRAM AREA</h3>
+                <form class="input-form">
+                    <input class="box" id="para.base.a" type="text" placeholder="Base (alas) - cm">
+                    <br>
+                    <input class="box" id="para.height" type="text" placeholder="Height (tinggi) - cm">
+                    <br>
+                    <div class="result">
+                        <p id="para.area.for"></p>
+                        <p id="para.area.cal"></p>
+                        <p id="para.area"></p>
+                    </div>
+                    <input type="button" class="submit" value="CALCULATE" onclick="paraarea()">
+                    <br>
+                    <div class="lower-button">
+                        <input type="reset" class="reset" value="Reset" onclick="clearform()">
+                        <a href="#top" class="back">Back To Top</a>
+                    </div>
+                </form>
+            </section>
+            <br><br>
+            <section class="form-box" id="parallelogram-perimeter">
+                <!-- Form Information -->
+                <h2>PARALLELOGRAM PERIMETER</h2>
+                <img class="shapes" src="assets/parallelogram.png">
+                <p>Formula for parallelogram's perimeter is :</p>
+                <p class="formula"> K =  2  x  (a  +  b)</p>
+                <p>Where :</br>
+                K = Perimeter (Keliling)</br>
+                a = base (alas)</br>
+                b = side (sisi)</p>
+                <hr>
+                
+                <!-- Form Input & Submit -->
+                <h3>CALCULATE PARALLELOGRAM PERIMETER</h3>
+                <form class="input-form">
+                    <input class="box" id="para.base.b" type="text" placeholder="Base (alas) - cm">
+                    <br>
+                    <input class="box" id="para.side" type="text" placeholder="Side (sisi) - cm">
+                    <br>
+                    <div class="result">
+                        <p id="para.peri.for"></p>
+                        <p id="para.peri.cal"></p>
+                        <p id="para.peri"></p>
+                    </div>
+                    <input type="button" class="submit" value="CALCULATE" onclick="paraperi()">
+                    <br>
+                    <div class="lower-button">
+                        <input type="reset" class="reset" value="Reset" onclick="clearform()">
+                        <a href="#top" class="back">Back To Top</a>
+                    </div>
+                </form>
+            </section>
+            <br>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <small>
+                <p>For RevoU Fundamental Course Mini Project</p>
+            </small>
+        </footer>
+        
+    </body>
+
+</html>

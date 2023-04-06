@@ -1,0 +1,190 @@
+/* CSS Stylesheet For Calculator */
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Webpage Title */
+.web-title {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: dodgerblue;
+    color: yellow;
+    text-shadow: 2px 2px grey;
+}
+
+/* Welcome & Engage Text */
+.welcome {
+    font-size: 17px;
+}
+
+.engage {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Nav Button */
+.button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 15px;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin:auto auto 20px auto;
+}
+
+.item:hover {
+    background-color: dodgerblue;
+}
+
+/* Form & Input Box */
+.form-box {
+    border: 1px black solid;
+    box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.75);
+    padding: 10px;
+    height: auto;
+}
+
+/* Form Title */
+h2 {
+    text-align: center;
+    background-color:deepskyblue;
+    color: yellow;
+    text-shadow: 2px 2px grey;
+    height: 70px;
+    font-size: 2em;
+    margin-top: 0%;
+    padding-top: 25px;
+}
+
+/* Shapes Image */
+.shapes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Formula */
+.formula {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* Input Title */
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* Form for Input Box, Result & Buttons */
+form {
+    margin : 0 auto;
+}
+
+.box:focus::placeholder {
+    color: transparent;
+}
+
+/* Input Box */
+.input-form {
+    margin: auto;
+    text-align: center;
+}
+
+.box {
+    border: 2px solid black;
+    text-align: center;
+    width: 300px;
+    margin: auto auto 10px auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Result Text */
+.result {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Submit Button */
+.submit {
+    display: flex;
+    background-color: limegreen;
+    color: ghostwhite;
+    text-align: center;
+    text-shadow: 2px 2px grey;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    width: 150px;
+    border: none;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Container Reset & Back Button */
+.lower-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset Button */
+.reset {
+    background-color: red;
+    color: ghostwhite;
+    border: none;
+    border-radius: 10px;
+    padding : 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 2px 2px grey;
+    width: 100px;
+}
+
+/* Back Button */
+.back {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    padding : 10px 10px;
+    font-size: 17px;
+}
